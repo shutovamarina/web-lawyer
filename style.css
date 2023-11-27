@@ -18,9 +18,12 @@ body {
     text-transform: uppercase;
 }
 
-.title_about {
+.section-header {
     display: flex;
     justify-content: center;
+}
+
+.title_about {
     font-size: 30px;
     text-transform: uppercase;
     color: #1e313e;
@@ -30,18 +33,13 @@ body {
     padding: 50px 70px 50px 70px;
     display: flex;
     background-color: #1e313e;
-}
-
-.header_block {
-    align-self: center;
-    margin-left: 20px;
+    justify-content: space-around;
+    padding: 60px;
 }
 
 .header_text {
-    padding-bottom: 15px;
     font-size: 18px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     padding: 10px;
 }
 
@@ -49,34 +47,71 @@ body {
     margin: 10px;
     padding: 30px;
     background-color: #1e313e;
-    border-top-right-radius: black;
-    border-bottom-left-radius: #efd3a2;
     border-radius: 30px;
     color: #efd3a2;
     text-transform: uppercase;
+    font-size: 16px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    background-color: #1e313e;
 }
 
 .wrapper {
-    padding: 100px;
-    background-color: #1e313e;
     display: flex;
-    justify-content: space-around;
     font-size: 18px;
+    padding: 10px;
+    align-self: center;
     color: white;
 }
 
 span {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding: 30px 20px 0px 20px;
+    margin: 40px;
     background-color: #bb8a5e;
     color: #1e313e;
     font-size: 70px;
     border-radius: 50px;
+    padding: 20px;
 }
 
-.item {
-    padding-left: 50px;
-    padding-right: 50px;
+.services {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: #1e313e;
+}
+
+.prices {
+    background-color: #1e313e;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.prices_text {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    background-color: #1e313e;
+    padding: 50px;
+}
+
+.footer {
+    background-color: #1e313e;
+    padding: 10px;
+}
+
+.footer_text {
+    color: #efd3a2;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: default;
 }
