@@ -1,117 +1,160 @@
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #1e313e;
-    padding: 10px;
-}
-
-.menu {
-    padding: 20px;
-    color: #efd3a2;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.section-header {
-    display: flex;
-    justify-content: center;
-}
-
-.title_about {
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #1e313e;
-}
-
-.header {
-    padding: 50px 70px 50px 70px;
-    display: flex;
-    background-color: #1e313e;
-    justify-content: space-around;
-    padding: 60px;
-}
-
-.header_text {
-    font-size: 18px;
-    color: white;
-    padding: 10px;
-}
-
-.header_btn {
-    margin: 10px;
-    padding: 30px;
-    background-color: #1e313e;
-    border-radius: 30px;
-    color: #efd3a2;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px;
-    background-color: #1e313e;
-}
-
-.wrapper {
-    display: flex;
-    font-size: 18px;
-    padding: 10px;
-    align-self: center;
-    color: white;
-}
-
-span {
-    margin: 40px;
-    background-color: #bb8a5e;
-    color: #1e313e;
-    font-size: 70px;
-    border-radius: 50px;
-    padding: 20px;
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-    background-color: #1e313e;
-}
-
-.prices {
-    background-color: #1e313e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.prices_text {
-    padding: 20px;
-    color: white;
-    font-size: 18px;
-}
-
-.map {
-    display: flex;
-    justify-content: center;
-    background-color: #1e313e;
-    padding: 50px;
-}
-
-.footer {
-    background-color: #1e313e;
-    padding: 10px;
-}
-
-.footer_text {
-    color: #efd3a2;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: default;
-}
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #1e313e;
+        padding: 10px;
+    }
+    
+    .menu {
+        padding: 20px;
+        color: #efd3a2;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .section-header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .title_about {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #1e313e;
+    }
+    
+    .header {
+        padding: 50px 70px 50px 70px;
+        display: flex;
+        background-color: #1e313e;
+        justify-content: space-around;
+        padding: 60px;
+    }
+    
+    .header_text {
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+    }
+    
+    .header_btn {
+        margin: 10px;
+        padding: 30px;
+        background-color: #1e313e;
+        border-radius: 30px;
+        color: #efd3a2;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    .features {
+        display: flex;
+        justify-content: space-around;
+        padding: 60px;
+        background-color: #1e313e;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        padding: 10px;
+        align-self: center;
+        color: white;
+    }
+    
+    .wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    span {
+        margin: 40px;
+        background-color: #bb8a5e;
+        color: #1e313e;
+        font-size: 70px;
+        border-radius: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .services {
+        display: flex;
+        justify-content: center;
+        padding: 60px;
+        background-color: #1e313e;
+    }
+    
+    .prices {
+        background-color: #1e313e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prices_text {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .map {
+        display: flex;
+        justify-content: center;
+        background-color: #1e313e;
+        padding: 50px;
+    }
+    
+    .footer {
+        background-color: #1e313e;
+        padding: 10px;
+    }
+    
+    .footer_text {
+        color: #efd3a2;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: default;
+    }
+    
+    @media all and (max-width: 1200px) {
+        .wrapper {
+            flex-direction: column;
+        }
+        span {
+            margin: 20px;
+        }
+        .features {
+            padding: 40px;
+        }
+        .wrap {
+            padding-right: 60px;
+        }
+    }
+    
+    @media all and (max-width: 800px) {
+        .header {
+            flex-direction: column;
+            align-items: center;
+        }
+        .prices_text {
+            text-align: center;
+        }
+    }
+    
+    @media all and (max-width: 600px) {
+        .wrap {
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0;
+        }
+        .item {
+            text-align: center;
+        }
+    }
